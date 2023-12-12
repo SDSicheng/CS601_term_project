@@ -370,9 +370,10 @@ td:first-child {
   align-items: center;
   height: 100vh; /* This centers the video vertically on the page */
 }
+
 .center-iframe {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 70vh; /* Adjust the height as needed */
+  height: 70vh; 
 }
