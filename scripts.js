@@ -15,7 +15,7 @@ function sendEmail() {
   var lastName = document.getElementById('lname').value;
   var subject = document.getElementById('subject').value;
 
-  // The template params should match the template parameters you set up in your EmailJS template
+  // The template params should match 
   var templateParams = {
       from_name: firstName + " " + lastName,
       message_html: subject,
