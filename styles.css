@@ -364,4 +364,9 @@ td:first-child {
   text-align: left; /* Align the first cell's text to the left */
 }
 
-
+.video-container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* This centers the video vertically on the page */
+}
