@@ -1,0 +1,367 @@
+/* Reset margins and paddings */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Full-width header */
+.dota-header {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  height: 100px; 
+  width: 100%; 
+  background-image: url('https://server.blix.gg/imgproxy/7KOJmFPDsg4y4msQPSIqo6G5Nw9dVfZLleYJNkBs7_c/rs:fit:0:0:0/g:no/aHR0cDovL21pbmlvOjkwMDAvaW1hZ2VzL2FkM2Y0N2Q3ZmVkNDQzYzA4MTVmNWUyZDZiNmVlNmI2LnBuZw.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;  
+}
+
+/* Apply the font style from the second image to all text in the header */
+.dota-header nav ul li a {
+  font-family: Bradley Hand, cursive;
+  font-size: 20px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none; 
+  transition: font-size 0.3s ease, text-shadow 0.3s ease; /* Smooth transition for font size and shadow changes */
+}
+
+/* Align the navigation links */
+.dota-header nav ul {
+  list-style-type: none;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  padding: 0;
+  width: 100%; 
+  margin: 0; 
+}
+
+.dota-header nav ul li {
+  padding: 0 10px; 
+}
+
+/* Hover effect for links */
+.dota-header nav ul li a:hover {
+  font-size: 24px; 
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+  cursor: pointer; 
+}
+
+body {
+  position: relative;
+}
+
+body::before {
+  content: "";
+
+  background-color: rgba(0, 0, 0, 0.5); 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* body style */
+body::after {
+  content: "";
+  background-image: url('https://c4.wallpaperflare.com/wallpaper/952/657/195/dota-2-4k-desktop-wallpaper-preview.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+
+.center-text {
+  text-align: center;
+}
+
+p, ul, td{
+  color: white; 
+}
+
+.image-container {
+  position: relative;
+  width: 350px;
+  height: 450px;
+  margin: 0 auto; /* Center the container */
+}
+
+.image-container img {
+  width: 100%; 
+  height: 100%; 
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: opacity 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.hover-image {
+  opacity: 0;
+}
+
+.image-container:hover .hover-image {
+  opacity: 1;
+}
+
+.center-text ul {
+  list-style-type: none; 
+  padding: 0; 
+  margin: 0; 
+}
+
+.center-text ul li {
+  font-size: 20px; 
+  margin-bottom: 20px; 
+}
+
+/* footer style */
+footer {
+  text-align: center; 
+  padding: 10px; 
+  background-image: url('https://i.redd.it/d01ejdn7l1y21.jpg'); 
+  background-size: cover; 
+}
+
+/* footer icon */
+footer img {
+  width: 50px; 
+  vertical-align: middle; 
+  margin-right: 10px; 
+}
+
+/* full screen */
+.video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-container iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: none;
+  transform: scale(1.2); /* Scale the iframe to 120% to fit the container */
+}
+
+
+/* hometown css */
+
+.container {
+  position: relative;
+  width: 50%; 
+  margin: auto; /* Centers the div */
+}
+
+.container img {
+  width: 100%; /* Resize the image to fit the container */
+  transition: opacity 0.3s ease; /* Smooth transition for the hover effect */
+}
+
+.img2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0; /* Initially hide the second image */
+  transition: opacity 0.3s ease; /* Smooth transition for the hover effect */
+}
+
+.container:hover .img2 {
+  opacity: 1; /* Show the second image on hover */
+}
+
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  text-align: center; /* Center align the table */
+}
+
+table caption {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left; /* Left align table cell text */
+}
+
+table th {
+  background-color: #333;
+  color: #fff;
+}
+
+.gallery {
+  text-align: center;
+}
+
+.gallery h1 {
+  font-size: 24px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.column {
+  flex: 1;
+  padding: 10px;
+}
+
+.column img {
+  max-width: 30%;
+  height: auto;
+  margin: 5px;
+  transition: transform 0.3s ease-in-out; /* Add a transition effect */
+}
+
+/* Add a hover effect to the images */
+.column img:hover {
+  transform: scale(1.1); /* Scale the image by 110% on hover */
+}
+
+/* project */
+/* Center text horizontally */
+.center-text {
+  text-align: center;
+}
+
+/* Style for project sections */
+.project-section {
+  margin-bottom: 40px;
+}
+
+
+/* Style for videos */
+video {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* form style */
+.form-container {
+  max-width: 600px; 
+  margin: 50px auto; 
+  padding: 30px; 
+  background-color: #fff; 
+  border: none; /* No border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  border-radius: 10px; /* Rounded corners for the form */
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+}
+
+input[type=text], textarea {
+  width: calc(100% - 20px); 
+  padding: 12px 10px; 
+  margin-bottom: 20px; 
+  border: 1px solid #ddd; 
+  border-radius: 5px; 
+  box-sizing: border-box; 
+  font-size: 16px; /* Larger font size for better readability */
+}
+
+input[type=button] {
+  width: auto; 
+  background-color: #5C6BC0; 
+  color: white; 
+  padding: 15px 25px; 
+  margin: 8px 0; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease; 
+  display: block; 
+  margin-left: auto; 
+  margin-right: auto; 
+  font-size: 18px; 
+}
+
+input[type=button]:hover {
+  background-color: #3949AB; /* Slightly darker blue on hover */
+}
+
+/* Add focus styles for inputs */
+input[type=text]:focus, textarea:focus {
+  border-color: #5C6BC0; 
+  outline: none;
+}
+
+/* Style the labels for better appearance */
+label {
+  display: block; 
+  margin-bottom: 5px; 
+  color: #333; 
+  font-size: 14px; 
+}
+
+/* table style */
+
+table {
+  width: 100%; /* Full width */
+  border-collapse: collapse; 
+  margin: 50px auto; 
+  box-shadow: 0 2px 15px rgba(7, 7, 7, 0.1); 
+  background-color: #a46868; 
+  overflow: hidden; 
+  border-radius: 8px; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+th, td {
+  padding: 15px; 
+  text-align: left; 
+  border-bottom: 1px solid #f0f0f0; 
+}
+
+th {
+  background-color: #5C6BC0; 
+  color: white; 
+  font-size: 18px; 
+}
+
+tr:hover {
+  background-color: #f5f5f5; 
+}
+
+td a {
+  color: #5C6BC0; 
+  text-decoration: none; 
+  transition: color 0.3s ease; 
+}
+
+td a:hover {
+  color: #3949AB; 
+}
+
+td:last-child {
+  text-align: right; /* Align the last cell's text to the right */
+}
+
+td:first-child {
+  text-align: left; /* Align the first cell's text to the left */
+}
+
+

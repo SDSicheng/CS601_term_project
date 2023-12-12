@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact me</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/871/871366.png">
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+    <script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="dota-theme">
+
+<header class="dota-header">
+    <nav>
+        <ul>
+          <li><a href="Homepage.html">Homepage</a></li>
+          <li><a href="My_favourite_game.html">My favourite game</a></li>
+          <li><a href="My_hometown.html">My Hometown</a></li>
+          <li><a href="My_photo_gallery.html">Gallery</a></li>
+          <li><a href="My_projects.html">My projects</a></li>
+          <li><a href="Contact_me.html">Contact me</a></li>
+        </ul>
+    </nav>
+</header>
+
+<table>
+    <tr>
+        <th>Communication Platform</th>
+        <th>Link</th>
+    </tr>
+    <tr>
+        <td>LinkedIn</td>
+        <td><a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit">LinkedIn Profile</a></td>
+    </tr>
+    <tr>
+        <td>E-mail</td>
+        <td>ysc1998@bu.edu</td>
+    </tr>
+    tr>
+        <td>GitHub</td>
+        <td><a href="https://github.com/SDSicheng">GitHub Profile</a></td>
+    </tr>
+</table>
+
+<div class="form-container">
+  <form id="contact-form">
+      <label for="fname">First Name:</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+      
+      <label for="lname">Last Name:</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      
+      <label for="subject">The message you want to send me.</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+      <input type="button" value="Submit" onclick="sendEmail()">
+  </form>
+</div>
+
+</body>
+
+<footer>
+  <img src="https://cdn0.iconfinder.com/data/icons/coloricons/50/50X50-10-512.png" alt="Footer Icon">
+  <p>2023 | Sicheng Yu</p>
+</footer>
+</html>
