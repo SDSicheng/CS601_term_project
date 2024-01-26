@@ -1,4 +1,5 @@
 # CS601_term_project
+weblink: https://sdsicheng.github.io/CS601_term_project/Homepage.html
 Homepage.html
 This is the main landing page of the website.
 It provides an introduction to Sicheng Yu and his three main lifestyle aspects: software engineering, bodybuilding, and Dota2 gaming.
